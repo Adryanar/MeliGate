@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('../img/fondo.jpg');
+    background-image: url('..image/fondo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -8,4 +8,42 @@ body {
   color: #fff; /* Blanco sobre fondo oscuro */
   margin-top: 60px; /* espacio para el menú fijo */
   margin-bottom: 60px; /* espacio para el footer fijo */
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1rem 0;
+    z-index: 1000;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-list a:hover {
+    text-decoration: underline;
+}
+/* Footer fijo en la parte inferior */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  z-index: 1000; /* Asegura que esté encima del contenido */
 }
